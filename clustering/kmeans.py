@@ -107,7 +107,6 @@ def k_means(dataset_file, k):
     k_points = generate_k(dataset, k)
     assignments = assign_points(dataset, k_points)
     old_assignments = None
-    new_centers = []
     while assignments != old_assignments:
         new_centers = update_centers(dataset, assignments, k)
         old_assignments = assignments
@@ -115,6 +114,6 @@ def k_means(dataset_file, k):
     clustering = defaultdict(list)
     for assignment, point in zip(assignments, dataset):
         clustering[assignment].append(point)
-    return clustering, new_centers
+    return clustering
 
 
