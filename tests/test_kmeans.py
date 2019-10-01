@@ -86,9 +86,9 @@ def test_kmeans_when_k_is_3(dataset, expected1, expected2, expected3):
     assert clustered == [expected_clustering1, expected_clustering2, expected_clustering3]
     return clustered == [expected_clustering1, expected_clustering2, expected_clustering3]
 
-
-a = "/Users/AaronLee/clustering/tests/test_files/dataset_1.csv"
-b = "/Users/AaronLee/clustering/tests/test_files/dataset_1_k_is_3_0.csv"
-c = "/Users/AaronLee/clustering/tests/test_files/dataset_1_k_is_3_1.csv"
-d = "/Users/AaronLee/clustering/tests/test_files/dataset_1_k_is_3_2.csv"
-x = test_kmeans_when_k_is_3(a,b,c,d)
+#
+# a = "/Users/AaronLee/clustering/tests/test_files/dataset_1.csv"
+# b = "/Users/AaronLee/clustering/tests/test_files/dataset_1_k_is_3_0.csv"
+# c = "/Users/AaronLee/clustering/tests/test_files/dataset_1_k_is_3_1.csv"
+# d = "/Users/AaronLee/clustering/tests/test_files/dataset_1_k_is_3_2.csv"
+# x = test_kmeans_when_k_is_3(a,b,c,d)
